@@ -1,0 +1,33 @@
+package ELEVEN;
+
+public class ELEVEN1 {
+	static int i=30; //static variabe
+	
+	public static void main(String[] args) //static method
+	{
+		System.out.println("main"); 
+		System.out.println(i);       //static variabe can be directly accessed to static method
+		test1();
+		ELEVEN1 A = new ELEVEN1();
+		A.test2();
+	}
+public static void test1()  // static method
+{
+	System.out.println("test1 static");
+	System.out.println(i);       //static variabe can be directly accessed to static method
+}
+public void test2()           // NON STATIC METHOD
+{
+	System.out.println("test2 non static");
+	System.out.println(i);    ////static variabe can be directly accessed to NON STATIC METHOD
+}
+}
+
+
+
+output:   main
+          30
+          test1 static
+          30
+          test2 non static
+          30
