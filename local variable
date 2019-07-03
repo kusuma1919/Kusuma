@@ -1,0 +1,25 @@
+package ten;
+
+class ten
+{
+	public static void main(String[] args)
+	{
+		System.out.println("main starts");
+	int a = 30;
+	System.out.println(a);
+	test();
+	}
+public static void test()
+{
+	System.out.println("test method");
+	int b = 45;
+	System.out.println(b);
+
+}
+}
+
+output:
+      main starts
+      30
+      test method
+      45
