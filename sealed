@@ -1,0 +1,41 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp19
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Main starts");
+            A a1 = new A();
+                a1.Fun();
+            B b1 = new B();
+                b1.Fun();
+            Console.ReadKey();
+        }
+
+        class A
+        {
+            public virtual void Fun()
+            {
+                Console.WriteLine("Fun starts");
+            }
+        }
+        class B : A
+        {
+            public sealed override void Fun()
+            {
+                Console.WriteLine("Overrided Fun");
+            }
+        }
+    }
+}
+
+output :
+        Main starts
+        Fun starts
+        Overrided Fun
