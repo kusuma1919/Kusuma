@@ -1,0 +1,33 @@
+package ELEVEN;
+
+public class ELEVEN3
+{
+public static void main(String[] args)
+{
+	System.out.println("main starts");
+	test(2);
+	test(3,4);
+	test(6.5,7);
+}
+public static void test(int a)
+{
+	System.out.println(a);
+}
+public static void test(int a, int b)
+{
+	System.out.println(a+" "+b);
+	System.out.println(b);
+}
+public static void test(double a, int b)
+{
+	System.out.println(a);
+	System.out.println(b);
+}
+}
+
+output: main starts
+        2
+        3 4
+        4
+        6.5
+        7
