@@ -1,0 +1,40 @@
+package ten;
+
+class ten
+{
+public static void main(String[] args)
+{
+	test1(4);
+	test2(5);
+	test3(6);
+}
+public static void test1(int a)
+{
+	System.out.println("test1 starts");
+	System.out.println(a);
+
+}
+public static void test2(int a)
+{
+	System.out.println("test2 starts");
+System.out.println(a);
+
+}
+public static void test3(int a)
+{
+	System.out.println("test3 starts");
+System.out.println(a);
+
+
+}
+}
+
+
+output:
+
+test1 starts
+4
+test2 starts
+5
+test3 starts
+6
