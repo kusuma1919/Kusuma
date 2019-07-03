@@ -1,0 +1,26 @@
+package ten;
+
+class ten
+{
+	int c=45, d=65;
+	public static void main(String[] args)
+	{
+		System.out.println("main starts");
+	int a = 30;
+	System.out.println(a);
+	test();
+	System.out.println(c);
+	}
+public static void test()
+{
+	System.out.println("test method");
+	int b = 45;
+	System.out.println(b);
+	System.out.println(d);
+}
+}
+
+output :
+
+ we will get an error because to use non-static global variables in static method to access them  we should create an object.
+     
